@@ -897,9 +897,35 @@ body > header + main > section:last-child iframe {
   }
 }
 
-/*
-Van a usar 2 selectores de etiqueta, 
-van a sacarle los puntitos que aparecen en los botones del nav.
-van a darle a todas las imagenes una redondez en el borde.
-van a darle el mismo color de fondo a 3 secciones
-van a darle borde al div del logo
+
+/* =============================================
+   EJERCICIO — 5 CONSIGNAS
+   ============================================= */
+
+/* 1. DOS SELECTORES DE ETIQUETA — h3 y h5 dentro del article comparten font-family */
+main > article h3,
+main > article h5 {
+  font-family: var(--font-display);
+}
+
+/* 2. SACAR LOS PUNTITOS de los ítems del nav */
+nav ul li {
+  list-style: none;
+}
+
+/* 3. REDONDEZ EN TODAS LAS IMÁGENES */
+img {
+  border-radius: 8px;
+}
+
+/* 4. MISMO COLOR DE FONDO A 3 SECCIONES */
+main > section:first-of-type,
+main > section:nth-of-type(2),
+main > section:nth-of-type(3) {
+  background-color: var(--crema);
+}
+
+/* 5. BORDE AL DIV DEL LOGO */
+header > div {
+  border: 2px solid var(--negro);
+}
